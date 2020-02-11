@@ -3,6 +3,7 @@
 
 This is a <code>code</code> test.
 
-<p style="margin-left:20px">This text is indented.</p>
+* This is a bullet level 1.
+
 
 this text is not.
