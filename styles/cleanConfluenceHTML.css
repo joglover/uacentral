@@ -1,0 +1,481 @@
+/*
+@page{
+ font-size: 14pt;
+    @bottom-right
+    {
+        content: "Page: " counter(page);
+        font-family: 'Oracle Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+        font-size: 8pt;
+    }
+   @bottom-left {
+   content:"Tiger Team Training 2019";
+ font-family: 'Oracle Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+        font-size: 8pt;  
+}
+
+    @bottom-center
+    {
+       content: "Copyright © 2019, Oracle and/or its affiliates. All rights reserved. ";
+        font-family: 'Oracle Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+        font-size: 8pt;
+    }
+}
+
+
+*/
+
+
+@media print {
+	
+	h1, h2, h3, h4, h5, h6 {
+	   page-break-after: avoid;
+   }	
+  
+  pre, .precodeblock, .confluence-information-macro-note, .confluence-information-macro-tip {
+		page-break-inside: avoid !important;
+		}
+		
+   
+	
+		
+  header {
+	  display: none;
+  }
+  
+  @page {
+    margin-top: .5in;
+    margin-bottom: 1in;
+	margin-left: .5in;
+	margin-right: .5in;
+   }
+   
+   .page-break {
+	   page-break-after: always;
+   }
+ 
+
+ 
+}
+
+/* Positioning    */
+/* ------------------------------------------*/
+header {
+  width: 100%;
+  position: fixed;
+  top:0;
+  left:0;
+  height: 62px;
+  z-index: 10;
+  margin:0px;
+}
+
+#banner {
+    height: 62px;
+    width:100%;
+  /*  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.25);*/
+    padding: 0 0 0 10px;
+	background-color: #3F3A36;
+  }
+
+#logo {
+    margin-left:10px;
+    float:left;
+	width:60px;
+	height: 62px;
+  }
+  
+#main {
+	margin: 0px 0px 20px 0px;
+
+}
+
+
+
+#leftNav {
+	position: fixed;
+	top: 193px;
+	bottom: 0px;
+	overflow-y: auto;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 14px;
+	width: 232px;
+}
+
+
+
+#main-header {
+	position: fixed;
+	top: 62px;
+	left:0px;
+	border-bottom: 1px solid #d6dfe6;
+	width: 100%;
+	height: 130px;
+	display: table;
+	background-color: white;
+	z-index:5px;
+}
+
+#contentBox {
+    position: fixed;
+	top: 193px;
+	bottom:0px;
+	right:0px;
+	left: 0px;
+	overflow-y: scroll;
+	margin-left: 230px;
+    padding-left: 32px;
+    padding-right: 10px;
+	border-left: 1px solid #d6dfe6;
+}
+
+
+.pageSection {
+	position: fixed;
+	left: 20px;
+	top: 62px;
+}
+
+
+
+* {
+	font-family: "Oracle Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+pre, .precodeblock, .confluence-information-macro-note, .confluence-information-macro-tip {
+		page-break-inside: avoid !important;
+		}
+		
+
+body * {
+	/*font-family: Arial;*/
+	word-wrap: break-word;
+}
+
+body {
+	margin: 0px;
+	/*background-color: #fafafa;*/
+}
+
+
+	
+	
+
+
+h1, h2, h3, h4, h5, h6 {
+
+	page-break-after: avoid;
+	break-after: avoid;
+}
+
+h1 {
+	padding: 0 32px 0 32px;
+}
+
+
+	
+
+h1, h1 span, h1 span span {
+	/*border-bottom: 1px solid #eaecef;*/
+	display: table-cell;
+	vertical-align: middle;
+	color: #312D2A;
+	font-family: "Oracle Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	font-weight: 900;
+	font-size: 40px;
+
+	/*color: red; */
+}
+
+h2, h2 span, h2 span span {
+	color: #312D2A;
+	font-family: "Oracle Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	font-weight:600;
+	font-size: 26px;
+	line-height: 40px;
+	margin-bottom: 20px;
+	margin-top: 0px;
+	padding-top: 20px;
+	/*color: blue;*/
+}
+
+h3, h3 span, h3 span span {
+	color: #312D2A;
+	/*color: green;*/
+	font-weight: 450;
+	font-size: 22px;
+	line-height: 40px;
+	margin-bottom: 20px
+	font-family: "Oracle Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+
+img {
+	max-width:660px;
+	/*border: 1px solid LightGray;*/
+}
+
+code, pre, code span, .codeph {
+	font-family: "Courier New", Courier, monospace !important;
+}
+
+code strong {
+	font-family: "Courier New", Courier, monospace !important;
+}
+
+pre {
+	border: 1px solid gray;
+	overflow-x: auto;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+    border-radius: 6px;
+    border: solid 2px #dedad6;
+    background-color: #ffffff;
+    padding: 18px;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    text-align: left;
+    color: #1a1816; 
+}
+
+.confluence-information-macro-note, .confluence-information-macro-tip {
+	padding-left: 10px;
+	padding-right: 10px;
+	border-left: 8px solid #7dd1d3 !important;
+}
+
+
+
+
+ol li ol li {
+	list-style-type: lower-alpha;
+}
+
+ol li ol li ol li {
+	list-style-type: lower-roman;
+}
+
+ol li ol li ul li {
+	list-style-type: circle;
+}
+
+li {
+	margin-top: 12px;
+}
+
+
+a, li a, p a, span a {
+	color: #bb501c;
+	text-decoration: none;
+}
+
+ table {
+	  color: #1a1816;
+	  page-break-inside: avoid !important;
+	  border-spacing: 0;
+	  border-collapse: collapse;
+  }
+  
+  th {
+	  background: #f8f7f4;
+	  padding: 10px;
+	  color: #1a1816;
+	  text-align: left;
+	  border: solid 2px #eceae5;
+  }
+  
+ 
+  
+  td {
+	 background: #ffffff;
+	 padding: 10px;
+	 color: #1a1816;
+	 text-align: left;
+	 border: solid 2px #eceae5;
+  }
+  
+  #leftNav ul {
+	  padding-left: 30px;
+	  padding-right: 20px;
+  }
+  
+  #leftNav ul li {
+	 list-style: none outside none;
+	 margin-bottom: 36px;
+	  
+  }
+  
+  #leftNav ul li ul li {
+	  list-style: none outside none;
+	 margin-bottom: 20px; 
+  }
+
+
+/* for header */
+
+  
+#logo a {
+	   font-family: 'Oracle Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	   color: #FCFBFA;
+}
+
+#logo a img {
+	border: none;
+}
+
+  
+#handsonlabs {
+    float:left;
+  }
+
+#handsonlabs a {
+    font-family: 'Oracle Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size:16px;
+	letter-spacing: 1px;
+    font-weight: bold;
+    line-height:60px;
+    color: #FCFBFA;
+	text-decoration: none;
+  }
+  
+ /*for footer */
+ 
+ footer * {
+	font-family: 'Oracle Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #e5e1dd;
+	text-decoration: none;
+	text-align: center;
+}
+
+footer {
+	margin: 0 0 0em 0;
+	line-height: 1.5em;
+	clear: both;
+	width:100%;
+	background-color: #3f3a36;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	z-index:10;
+}
+
+div.oracle-logo {
+	background-image: url("oracle-logo-white.png");
+}
+
+.footer-container {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 16px;
+	line-height: 1.5em;
+	align-items: center;
+	height: auto;
+	/*display: flex;
+	flex-direction: column-reverse;*/
+	width: 100%;
+	min-width: 300px;
+}
+
+ul#footer-links {
+	list-style: none;
+	font-size: 16px;
+	margin: 16px 0px 0px 0px;
+	padding: 0px;
+	
+}
+
+ul#footer-links li {
+	display: inline;
+	margin: 0;
+	list-style: none;
+	font-size: 14px;
+	border-right: 1px solid #e5e1dd; 
+	font-weight: normal;
+	padding: 0 .8em 0 .6em;
+	text-align: center;
+	line-height: 1.5em;
+}
+
+ul#footer-links li.footer-last {
+	border-right: 0px solid #e5e1dd; 
+}
+
+/* reformat bullets from index.html */
+
+.pageSection li {
+	list-style: none;
+}
+
+
+
+/* media queries */
+@media (max-width: 1140px) {
+	
+	header {
+		position: relative;
+		width:100%
+	}
+	
+	#main-header {
+		position: relative;
+		margin-left:0;
+		margin-right:0;
+		float: left;
+		overflow-y: initial;
+		word-wrap: breakword;
+		width: 100%;
+		top: initial;
+		float: left;
+	}
+	
+	#main-header h1 {
+		padding-left:20px;
+		padding-right: 20px;
+	}
+	
+	#main {
+		margin-bottom:4px;
+	}
+		
+   #contentBox, #leftNav {
+		position: relative;
+		margin-right: 20px;
+		margin-left: 20px;
+		padding-left: 0px;
+		padding-right: 20px;
+		border-left: none;
+		float: left;
+		overflow-y: initial;
+		word-wrap: break-word;
+		top: initial;
+		width: 100%;
+	}
+	
+	.pageSection {
+		position: relative;
+		left: inherit;
+		top: inherit;
+		width: 90%;
+		margin-left: 20px;
+	}
+	
+	.pageSection ul {
+		padding-left: 0px;
+	}
+		
+	
+	#leftNav ul {
+		padding-left: 0px;
+	}
+ 
+
+}
+
